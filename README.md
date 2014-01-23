@@ -1,18 +1,14 @@
 devicewrapper
 =============
 
-'Python Wrapper for android uiautomator-server. provides more event inject and inspect way
+Python Wrapper for android uiautomator-server. provides more event inject and inspect way.
 
 ### Install
-    ```
     sudo pip install devicewrapper
-    ```
 
 ### Dependency
-    ```
     sudo apt-get install python-opencv
     sudo apt-get install python-numpy
-    ```
 
 ### Basic API Usages
    ```
