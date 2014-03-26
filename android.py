@@ -60,6 +60,14 @@ class AndroidDevice(object):
         '''
         return self.d(*args, **kwargs)
 
+    @property
+    def orientation(self):
+        return self.d.orientation
+
+    @orientation.setter
+    def orientation(self, v):
+        self.d.orientation = v
+
     def serial(self):
         '''
         device serial number from $ANDROID_SERIAL
@@ -138,6 +146,9 @@ class AndroidDevice(object):
 
         if 'uri' in keys:
             shellcmd.append(intent_params['uri'])
+
+        if 'package' in keys:
+            shellcmd.append(intent_params['package'])
         #sys.stderr.write(str(shellcmd))            
         self.d.server.adb.cmd(*shellcmd).communicate()
         return self
