@@ -6,12 +6,12 @@ devicewrapper
      sudo pip install devicewrapper
     
 #### Dependency
-    1: sudo apt-get install python-opencv\n
-    2: sudo apt-get install python-numpy\n
-    3: target android device: sdk_version>=16\n
+    1: sudo apt-get install python-opencv
+    2: sudo apt-get install python-numpy
+    3: target android device: sdk_version>=16
 
 #### Usage
-    >>> from devicewrapper.android import device as d\n
+    >>> from devicewrapper.android import device as d
     >>> d.info
     >>> d.orientation
     >>> d.orientation = 'l'
